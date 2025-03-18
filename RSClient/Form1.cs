@@ -30,7 +30,7 @@ namespace RSClient
         {
             try
             {
-                client = new TcpClient(txtServerIP.Text, 8080);
+                client = new TcpClient(txtServerIP.Text, 8088);
                 stream = client.GetStream();
                 isConnected = true;
                 receiveThread = new Thread(ReceiveMessages);
